@@ -1,0 +1,252 @@
+.formulario {
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.formulario form, label {
+  margin: 5px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.formulario form input, button, select {
+  width: 85%;
+  height: 40px;
+  margin: 8px;
+  border: none;
+  border: 1px solid #90caf9; /* Azul intermedio */
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.formulario form input.fecha {
+  padding-right: 5px;
+}
+
+.formulario form input:focus {
+  border: 1px solid #42a5f5; /* Azul más oscuro */
+}
+
+.formulario form button, .btn-nuevo {
+  cursor: pointer;
+  grid-column: 4 / -1;
+  border-radius: 100px;
+  background-color: #42a5f5; /* Azul intermedio */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.formulario p.nota {
+  background-color: #ef5350; /* Rojo más fuerte */
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.formulario p.datos {
+  padding-left: 20px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+form div span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #e24444; /* Rojo */
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario .nuevo-usuario {
+  position: absolute;
+  background-color: rgba(158, 158, 158, 0.459); /* Transparente */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 100;
+}
+
+.formulario div.nuevo-usuario {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #bbdefb88; /* Azul claro transparente */
+  width: 100%;
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+div.formulario {
+  position: relative;
+}
+
+.formulario div.nuevo-usuario app-nuevo {
+  width: 75%;
+}
+
+.formulario div.oculto {
+  display: none;
+}
+
+div.nuevo-usuario span {
+  position: absolute;
+  top: -10px;
+  right: -7px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: 1px solid #90caf9; /* Azul intermedio */
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn-nuevo-cont {
+  margin: 5px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-nuevo-cont button {
+  background-color: #42a5f5; /* Azul intermedio */
+  cursor: pointer;
+  grid-column: 4 / -1;
+  border-radius: 100px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+div.productos {
+  grid-column: 1 / -1;
+}
+
+.table-container .separador {
+  margin-top: 20px;
+}
+
+div.separador {
+  grid-column: 1 / -1;
+}
+
+.separador div {
+  margin: 20px 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #90caf9; /* Azul intermedio */
+  border-radius: 20px;
+}
+
+.separador table {
+  width: 95%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+th, td {
+  border: none;
+  padding: 0 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #bbdefb; /* Azul claro */
+  color: #0d47a1; /* Azul oscuro */
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e3f2fd; /* Celeste claro */
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff; /* Blanco */
+}
+
+td.eliminar, th.eliminar {
+  text-align: center;
+}
+
+td#eliminar button {
+  border: 1px solid #ef5350; /* Rojo más fuerte */
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+td button.editar, td button.check {
+  background: none;
+  border: none;
+}
+
+.disabled-input {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.valores-a-pagar {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #90caf9; /* Azul intermedio */
+  margin-left: 5px;
+}
+
+.valores-a-pagar p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2b2b2b;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px 0;
+  border-bottom: 1px solid #90caf9; /* Azul intermedio */
+}
+
+.valores-a-pagar p span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+
+.valores-a-pagar p.impuesto-usado span {
+  grid-column: 1 / -1;
+}
+
+tr.sin-datos-tabla {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e24444; /* Rojo */
+  background: none;
+}
